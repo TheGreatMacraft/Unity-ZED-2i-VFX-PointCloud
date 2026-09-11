@@ -16,4 +16,6 @@ Step 2: We now need to find a way to correctly paint and position each individua
 
 Step 3: We now just need to feed both textures into the exposed property field (via a script) and set the particle rate (particles per second) and particle size. This step is very straightforward.
 
+Extra Step: Since ZED camera uses the GRBA color scheme instead the classic RGBA, we need to also implement some way to switch the R and G channels. I've found that the simplest way to do so is by using a custom *ComputeShader*.
+
 For additional questions or findings you can always reach out to me on discord: macraft
